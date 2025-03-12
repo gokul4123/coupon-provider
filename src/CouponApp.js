@@ -9,7 +9,7 @@ const CouponApp = () => {
     const [showNotification, setShowNotification] = useState(false);
     const [isClaimDisabled, setIsClaimDisabled] = useState(false);
     useEffect(() => {
-        fetch("http://localhost:5000/api/coupons")
+        fetch("https://coupon-provider-1.onrender.com/api/coupons")
             .then((res) => res.json())
             .then((data) => setAvailableCoupons(data.availableCoupons))
             .catch(() => setMessage("Error loading coupons."));
@@ -38,7 +38,7 @@ const CouponApp = () => {
         setIsClaimDisabled(true);
 
         try {
-            const res = await fetch("http://localhost:5000/api/claim", {
+            const res = await fetch("https://coupon-provider-1.onrender.com/api/claim", {
                 method: "POST",
                 credentials: "include",
             });
