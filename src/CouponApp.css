@@ -1,0 +1,96 @@
+.coupon-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.coupon-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.coupon-list {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.coupon-list h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.coupon-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coupon-list li {
+    background: #e0f7fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    color: #00796b;
+    font-weight: bold;
+}
+
+.claim-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.claim-button:hover {
+    background-color: #0056b3;
+}
+
+.claim-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.coupon-obtained {
+    color: green;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
