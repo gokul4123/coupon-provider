@@ -3,7 +3,9 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+
+const allowedOrigins = ["http://localhost:3000", "https://coupon-provider.netlify.app"];
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
